@@ -33,7 +33,9 @@ jobs:
       - name: push image
         run: echo "pushing image into docker hub" | sudo docker push amarnathj/dockerrepo
       - name: run container
-        run: docker run amarnathj/dockerrepo
+        run: docker run -i amarnathj/dockerrepo /bin/bash
+      - name: printing list of files
+        run: ls
 
         
         
