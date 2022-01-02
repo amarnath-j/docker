@@ -40,7 +40,7 @@ jobs:
       - name: working inside container
         run: |
           #docker-compose exec -T con
-          docker exec -t -i con /bin/bash
+          docker exec -t -i con sh
           ls -lart;
           pwd;
           
