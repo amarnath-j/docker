@@ -41,6 +41,8 @@ jobs:
         run: |
           docker-compose exec -T con
           ls
+          pwd
+          
         
 
         
