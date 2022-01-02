@@ -34,10 +34,14 @@ jobs:
         run: echo "pushing image into docker hub" | sudo docker push amarnathj/dockerrepo
       - name: run container
         run: |
-          docker run -it amarnathj/dockerrepo /bin/bash
-          ls
+          docker run -i amarnathj/dockerrepo /bin/bash
       - name: printing list of files
         run: ls
+      - name: working inside container
+        run: |
+          docker exec -it amarnathj/dockerrepo bash
+          ls
+        
 
         
         
