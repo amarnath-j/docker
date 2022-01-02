@@ -29,6 +29,6 @@ jobs:
       - name: creates an docker image
         run: docker build . --tag "firstimage" --file Dockerfile
       - name: login to the docker hub
-        run: echo "Logging into docker hub" | sudo docker login https://hub.docker.com/ -u "amarnathj" --password "amarnath123$"
+        run: echo "Logging into docker hub" | sudo docker login -u "amarnathj" --password "amarnath123$"
         
         
