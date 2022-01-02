@@ -38,8 +38,10 @@ jobs:
       - name: printing list of files
         run: ls
       - name: working inside container
-        run:
-          docker-compose exec -T con | ls | pwd
+        run: |
+          docker-compose exec -T con
+          ls -lart;
+          pwd;
           
         
 
