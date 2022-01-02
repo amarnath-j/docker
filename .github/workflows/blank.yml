@@ -31,7 +31,7 @@ jobs:
       - name: login to the docker hub
         run: echo "Logging into docker hub" | sudo docker login -u "amarnathj" --password "amarnath123$"
       - name: push image
-        run: echo "pushing image into docker hub" | sudo docker push amarnathj/dockerrepo:latest
+        run: echo "pushing image into docker hub" | sudo docker push amarnathj/dockerrepo:firstimage
 
         
         
