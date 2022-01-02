@@ -39,7 +39,7 @@ jobs:
         run: ls
       - name: working inside container
         run: |
-          docker exec -it amarnathj/dockerrepo bash
+          docker exec -it con /bin/bash
           ls
         
 
