@@ -39,7 +39,7 @@ jobs:
         run: ls
       - name: working inside container
         run: |
-          winpty docker exec -it con /bin/bash
+          winpty docker exec -it con bash
           ls
         
 
